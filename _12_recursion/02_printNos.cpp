@@ -25,4 +25,5 @@ int printNo(int number)
     {
         return number;
     }
+    return -1;
 }   
