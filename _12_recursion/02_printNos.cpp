@@ -2,11 +2,12 @@
 using namespace std;
 
 int printNo(int number);
-int printer(int max, int number);
+int i = 1;
 
 int main()
 {
     int number = 10;
+
     printNo(number);
     return 0;
 }
@@ -14,17 +15,14 @@ int main()
 
 int printNo(int number)
 {
-    int i = 1;
-    printer(number, i);
-    return 0;
-}   
-
-int printer(int max, int number)
-{
-    if((max+1) == number)
+    if(i <= number)
     {
-        return max;
-    }  
-    cout << number << ' ';
-    return printer(max, number+1); 
-}
+        cout << i << " ";
+        i++;
+        printNo(number);
+    }
+    else
+    {
+        return number;
+    }
+}   
