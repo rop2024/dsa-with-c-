@@ -13,6 +13,12 @@ int main()
     {
         cout << car << ' ';
     }
+
+    cout << endl;
+    // using vector libraries
+    cout << "First element is : "<<cars.front()<< endl;
+    cout << "Last element is : "<< cars.back() << endl;
+
     cout << endl;
     return 0;
 }
