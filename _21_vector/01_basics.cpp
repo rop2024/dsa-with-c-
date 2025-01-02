@@ -14,6 +14,14 @@ int main()
         cout << car << ' ';
     }
 
+    int size = cars.size();
+
+    for(int i = 0; i < size; i++)
+    {
+        cout << cars.at(i) << ' ';
+    }
+    cout << endl;
+
     cout << endl;
     // using vector libraries
     cout << "First element is : "<<cars.front()<< endl;
